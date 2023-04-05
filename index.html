@@ -11,16 +11,15 @@
 </head>
 
 <body>
-    <script>
-        requestAutoplay();
-    </script>
     <a-scene embedded arjs>
-        <a-marker preset="hiro">
-            <a-box position='0 0.5 0' material='color: red;' scale="0.5 0.5 0.5"></a-box>
-            <a-video src="./assets/videoplayback.mp4" autoplay loop="true" width="8" height="4.5" rotation="-90 0 0"></a-video>
+        <a-marker preset="hiro">    
+            <a-box position='0 0 0' material='color: red;' scale="0.5 0.5 0.5"></a-box>
+            <a-image src="./assets/test_gourgandine/fond.png" rotation="90 0 0" scale="2.5 2.5 2.5" position="0 0 0"></a-image>
+            <a-image src="./assets/test_gourgandine/sujet.png" rotation="-90 0 0" scale="2 2 2" position="0 0.5 0"></a-image>></a-image>
+            <a-image src="./assets/test_gourgandine/picto.png" rotation="-90 0 0" scale="0.5 0.5 0.5" position="0 .9 .5"></a-image>></a-image>
         </a-marker>
         <a-entity camera></a-entity>
     </a-scene>
 </body>
 
-</html> 
+</html>
