@@ -7,7 +7,7 @@ marker.addEventListener('markerFound', function () {
 });
 
 var i = 0;
-var txt = 'Bonjour, moi c’est je suis le noble tisserand, vous voulez vous aventurez pour la grande quête ? Mais vous êtes nu.e comme un ver ! Écoutez, j’aurais besoin de matériaux pour faire une armure, trouvez les … et vous serez équipé.e !';
+var txt = 'Bonjour ! Je suis le noble tisserand, vous voulez vous aventurez pour la grande quete ? Mais vous etes nu.e comme un ver ! Ecoutez, j aurais besoin de materiaux pour faire une armure, trouvez les … et vous serez equipe.e !';
 var speed = 25;
 var demoText = document.querySelector('#demo-text');
 
