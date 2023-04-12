@@ -15,8 +15,8 @@ var demoText = document.querySelector('#demo-text');
 
 
 
-function typeWriter(markerId) {
-  var txt = eval(markerId)
+function typeWriter(txtIn) {
+  var txt = eval(txtIn)
   setInterval(() => {
     if (i < txt.length) {
       console.log(demoText);
