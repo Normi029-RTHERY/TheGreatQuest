@@ -13,15 +13,15 @@
 <body>
     <a-scene embedded arjs>
         <a-marker preset="hiro" emmitevents="true" id="demoMarker">
-            <a-image src="./assets/decor textile pixel 2.0.png" rotation="-90 0 0" position="0 0 0" scale=""></a-image>
-            <a-image src="./assets/characters/tisserand2.png" rotation="-90 0 0" scale="2 2 2"
-                position="0 0.5 0"></a-image>></a-image>
-            <a-image src="./assets/msg-box.png" rotation="-90 0 0" scale="0.5 0.5 0.5"
-                position="0 .9 .5"></a-image>></a-image>
-            <a-text id="demo-text" position="0 1 0" rotation="-90 0 0" scale="0.6 0.6 0.6" value=""></a-text>
+            <a-entity rotation="-90 0 0">
+                <a-image src="./assets/posters/textile/decor textile pixel 2.0.png" position="0 .1 0" scale="1.080 1.920 1"></a-image>
+                <a-image src="./assets/characters/tisserand2.png" scale="2 2 2" position="0 0.5 0"></a-image>></a-image>
+                <a-image src="./assets/msg-box.png" scale="0.5 0.5 0.5" position="0 .9 .5"></a-image>></a-image>
+                <a-text id="demo-text" class="textBox" position="0 1 0" value=""></a-text>
+            </a-entity>
         </a-marker>
+        <a-entity cursor="fuse: false"></a-entity>
         <a-entity camera></a-entity>
-
     </a-scene>
     <script src="app.js"></script>
 </body>

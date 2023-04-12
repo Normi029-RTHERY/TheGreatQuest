@@ -1,9 +1,9 @@
 
 var markers = document.querySelectorAll('a-marker');
 markers.forEach(e => {
-  e.addEventListener('markerFound', function () {
+  e.addEventListener('markerFound', () => {
     typeWriter(e.id);
-    console.log('found' + e.id);
+    console.log('found' + e);
   });
 });
 
@@ -18,9 +18,12 @@ function typeWriter(txtIn) {
   var txt = eval(txtIn)
   setInterval(() => {
     if (i < txt.length) {
-      console.log(demoText);
       demoText.setAttribute('value', demoText.getAttribute('value') + txt.charAt(i));
       i++;
     }
   }, 25);
+}
+
+function clicked() {
+  console.log('clicked');
 }
