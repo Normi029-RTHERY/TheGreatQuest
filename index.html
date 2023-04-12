@@ -13,13 +13,16 @@
 <body>
     <a-scene embedded arjs>
         <a-marker preset="hiro" emmitevents="true" id="demoMarker" smooth="true" smooth-threshold="3">
-            <a-entity rotation="-90 0 0">
+            <a-entity rotation="-45 0 0">
                 <a-image src="./assets/posters/textile/decor textile pixel 2.0.png" scale="4.5 8 1"></a-image>
                 <a-image src="./assets/characters/perso_textile.png" scale="2 2 2" position="0 -0.3 .4"></a-image>
-                <a-image src="./assets/msg-box.png" scale="0.5 0.5 0.5" position="0 -.9 .5">
-                    <a-text id="demo-text" class="textBox" position="0 1 .1" value=""
+                <a-entity width="2" height="1" position="0 -1 1">
+                    <a-image src="./assets/msg-box.png" scale="0.5 0.5 0.5" position="0 0 0"></a-image>
+                    <a-text id="demo-text" class="textBox" position="0 0 .1" value=""
                         font="assets/fonts/W95FA-msdf.json" font-image="assets/fonts/W95FA.png" negate="false"></a-text>
-                </a-image>
+                </a-entity>
+
+
             </a-entity>
         </a-marker>
         <a-entity cursor="fuse: false"></a-entity>
