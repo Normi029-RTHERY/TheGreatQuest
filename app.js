@@ -14,7 +14,6 @@ var demoText = document.querySelector('#demo-text');
 
 
 
-
 function typeWriter(txtIn) {
   var txt = eval(txtIn)
   setInterval(() => {
