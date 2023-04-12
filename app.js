@@ -1,5 +1,6 @@
 
 var markers = document.querySelectorAll('a-marker');
+
 markers.forEach(e => {
   e.addEventListener('markerFound', () => {
     typeWriter(e.id);
@@ -7,13 +8,12 @@ markers.forEach(e => {
   });
 });
 
+
 var i = 0;
 var demoMarker = 'Bonjour ! Je suis le noble tisserand, vous voulez vous aventurez pour la grande quete ? Mais vous etes nu.e comme un ver ! Ecoutez, j aurais besoin de materiaux pour faire une armure, trouvez les … et vous serez equipe.e !';
-var delay = 25;
 var demoText = document.querySelector('#demo-text');
 
-
-
+var delay = 25;
 function typeWriter(txtIn) {
   var txt = eval(txtIn)
   setInterval(() => {
@@ -21,8 +21,9 @@ function typeWriter(txtIn) {
       demoText.setAttribute('value', demoText.getAttribute('value') + txt.charAt(i));
       i++;
     }
-  }, 25);
+  }, delay);
 }
+
 
 function clicked() {
   console.log('clicked');
