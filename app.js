@@ -3,7 +3,7 @@ var markers = document.querySelectorAll('a-marker');
 
 markers.forEach(e => {
   e.addEventListener('markerFound', () => {
-    typeWriter(e.id);
+    printDialog(e.id);
     console.log('found' + e);
   });
 });
@@ -14,7 +14,7 @@ var demoMarker = 'Te voilà enfin aventurier.ère ! Je me présente, je suis Bil
 var demoText = document.querySelector('#demo-text');
 
 var delay = 25;
-function typeWriter(txtIn) {
+function printDialog(txtIn) {
   var txt = eval(txtIn)
   setInterval(() => {
     if (i < txt.length) {
