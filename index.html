@@ -7,13 +7,18 @@
     <title>La Grande Quête</title>
     <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
+    <script
+        src="https://raw.githack.com/AR-js-org/studio-backend/master/src/modules/marker/tools/gesture-detector.js"></script>
+    <script
+        src="https://raw.githack.com/AR-js-org/studio-backend/master/src/modules/marker/tools/gesture-handler.js"></script>
     <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-    <a-scene embedded arjs sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960;’>
+    <a-scene embedded arjs gesture-detector>
         <!-- <a-marker preset="hiro" emmitevents="true" id="demoMarker" smooth="true"> -->
-        <a-marker type="pattern" url='./assets/patterns/pattern-ico-textile.patt'></a-marker>
+        <a-marker type="pattern" url="pattern-ico-objet-w.patt" emmitevents="true" id="demoMarker"
+            smooth="true"></a-marker>
         <a-entity rotation="-45 0 0">
             <a-image src="./assets/posters/textile/decor textile pixel 2.0.png" scale="4.5 8 1"></a-image>
             <a-image src="./assets/characters/perso_textile.png" scale="2 2 2" position="0 -0.3 .4"></a-image>
