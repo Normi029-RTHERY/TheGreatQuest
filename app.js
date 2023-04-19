@@ -5,6 +5,7 @@ var currentMarker = null;
 markers.forEach(e => {
   e.addEventListener('markerFound', () => {
     currentMarker = eval(e.id);
+    printDialog();
     console.log(currentMarker);
   });
 });
