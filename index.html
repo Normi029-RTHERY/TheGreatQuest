@@ -14,19 +14,19 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 
-<body>
-    <a-scene embedded arjs gesture-detector>
-        <a-marker preset="hiro" emmitevents="true" id="demoMarker" smooth="true">
-            <!-- <a-marker preset="custom" type="pattern" url="pattern-ico-textile.patt" emmitevents="true" id="demoMarker"
-            smooth="true"> -->
+<body style="margin: 0; overflow: hidden;">
+    <a-scene embedded arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;" gesture-detector>
+        <!-- <a-marker preset="hiro" emmitevents="true" id="demoMarker" smooth="true"> -->
+        <a-marker preset="custom" type="pattern" url="./assets/patterns/pattern-ico-textile-w.patt" emmitevents="true"
+            id="demoMarker" smooth="true">
             <a-entity rotation="-45 0 0">
                 <a-image src="./assets/posters/textile/decor textile pixel 2.0.png" scale="4.5 8 1"></a-image>
                 <a-image src="./assets/characters/perso_textile.png" scale="2 2 2" position="0 -0.3 .4"></a-image>
-                <a-anchor width="2" height="1" position="0 -1 1">
+                <a-entity width="2" height="1" position="0 -1 1">
                     <a-image src="./assets/msg-box.png" scale="0.5 0.5 0.5" position="0 0 0"></a-image>
                     <a-text id="demo-text" class="textBox" position="0 0 .1" value=""
                         font="assets/fonts/W95FA-msdf.json" font-image="assets/fonts/W95FA.png" negate="false"></a-text>
-                </a-anchor>
+                </a-entity>
             </a-entity>
         </a-marker>
         <a-entity cursor="fuse: false"></a-entity>
