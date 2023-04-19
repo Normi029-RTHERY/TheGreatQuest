@@ -1,11 +1,11 @@
 {
-    "txtTextile": [
-        "Te voilà enfin aventurier.ère ! Je me présente, je suis Bill, maître tisserand. Dites-moi mon brave, j’ai entendu dire que vous partiez explorer les contrées perdues de notre royaume de Serres mais de ce que je vois vous êtes nu.e comme un ver !",
+    "textile": [
+        "Te voilà enfin aventurier.ère ! Je me présente, je suis Bill, maître tisserand. Dites-mo   i mon brave, j’ai entendu dire que vous partiez explorer les contrées perdues de notre royaume de Serres mais de ce que je vois vous êtes nu.e comme un ver !",
         "Écoutez, il a peut-être une tunique que je peux vous fournir mais j’aurais besoin d’étoffes supplémentaires, aidez-moi à les retrouvez et je vous équiperai !",
         "Ah, parfait ! Avec ces matériaux je vais pour voir finaliser votre tunique. Elle suffira pour l’instant mais vous devriez vous procurer une arme.",
         "Allez passer le bonjour de ma part à Anne de la guilde des forgerons, elle vous équipera !"
     ],
-    "txtMetal": [
+    "metal": [
         "Haha ! Bienvenue, je suis Anne en effet. Alors comme ça c’est Bill qui t’envoie !? Haha ! Ce bon vieux Bill !",
         "Il a bien eu raison de te faire venir à moi, tu ne comptais quand même pas te battre avec tes poings petit ver ?",
         "Je peux te forger la plus puiiiiiiisssnante des épées mais puisque je suppose que n’a rien pour payer tu devras m’assister. Commence donc par aller chercher mes outils dans l’atelier.",
@@ -13,32 +13,32 @@
         "Je te conseille d’aller voir le Grand Tailleur de pierre, les joyaux qu’il manipule renforceront ta connexion avec ton arme.",
         "Pense aussi à te trouver une armure d’ailleurs petit ver ! C’est à toi de choisir, tu peux déjà tout occire avec mon glaive !"
     ],
-    "txtMosaique": [
+    "mosaique": [
         "",
         "",
         ""
     ],
-    "txtLaque": [
+    "laque": [
         "",
         "",
         ""
     ],
-    "txtVitrail": [
+    "vitrail": [
         "",
         "",
         ""
     ],
-    "txtObjet": [
+    "objet": [
         "",
         "",
         ""
     ],
-    "txtSpectacle": [
+    "spectacle": [
         "",
         "",
         ""
     ],
-    "txtFresque": [
+    "fresque": [
         "",
         "",
         ""

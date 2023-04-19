@@ -1,33 +1,43 @@
 
 var markers = document.querySelectorAll('a-marker');
-var currentMarker = null;
+var currentMarker;
+var currentTxtBox;
+var dialogs;
+
+fetch('./assets/dialogs.json')
+  .then(response => response.json())
+  .then(data => {
+    dialogs = data;
+  })
+  .catch(error => {
+    console.error('Error fetching data:', error);
+  });
 
 markers.forEach(e => {
   e.addEventListener('markerFound', () => {
     currentMarker = eval(e.id);
-    printDialog();
+    currentTxtBox = currentMarker.querySelector('.txtBox');
+    var currentSlide = 0;
     console.log(currentMarker);
+    console.log(currentTxtBox);
+    printDialog(dialogs[e.id][currentSlide]);
   });
 });
 
+function updateSlide() {
 
-
-
-var i = 0;
-var textile_marker = 'Te voilà enfin aventurier.ère ! Je me présente, je suis Bill, maître tisserand. Dites-moi mon brave, j’ai entendu dire que vous partiez explorer les contrées perdues de notre royaume de Serres mais de ce que je vois vous êtes nu.e comme un ver ! Écoutez, il a peut être une tunique que je peux vous fournir mais j’aurais besoin d’étoffes supplémentaires, aidez moi à les retrouvez et je vous équiperai !';
-var textileText = document.querySelector('#textile-text');
-
-var delay = 25;
-function printDialog() {
-  setInterval(() => {
-    if (i < txt.length) {
-      demoText.setAttribute('value', demoText.getAttribute('value') + currentMarker.charAt(i));
-      i++;
-    }
-  }, delay);
 }
 
+function checkIndex() {
 
-function clicked() {
-  console.log('clicked');
+}
+
+function printDialog(txt) {
+  var i = 0;
+  setInterval(() => {
+    if (i < txt.length) {
+      currentTxtBox.setAttribute('value', currentTxtBox.getAttribute('value') + txt.charAt(i));
+      i++;
+    }
+  }, 25);
 }
