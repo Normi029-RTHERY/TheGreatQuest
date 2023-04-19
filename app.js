@@ -34,6 +34,7 @@ function checkIndex() {
 
 function printDialog(txt) {
   var i = 0;
+  currentTxtBox.setAttribute('value', null);
   setInterval(() => {
     if (i < txt.length) {
       currentTxtBox.setAttribute('value', currentTxtBox.getAttribute('value') + txt.charAt(i));
